@@ -1,0 +1,11 @@
+[Desktop Entry]
+NoDisplay=true
+Version=1.0
+Encoding=UTF-8
+Type=X-XFCE-Helper
+X-XFCE-Category=WebBrowser
+X-XFCE-CommandsWithParameter=flatpak run org.mozilla.firefox "%s"
+Icon=flatpak
+Name=flatpak
+X-XFCE-Commands=flatpak run org.mozilla.firefox
+
