@@ -1,6 +1,10 @@
 [xfdesktop-version-4.10.3+-rcfile_format]
 4.10.3+=true
 
+[1.0 TB Encrypted]
+row=15
+col=0
+
 [CC18F2F418F2DD00]
 row=11
 col=0
