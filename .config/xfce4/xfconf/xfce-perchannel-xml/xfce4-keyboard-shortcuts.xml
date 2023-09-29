@@ -61,6 +61,7 @@
         <property name="startup-notify" type="bool" value="true"/>
       </property>
       <property name="&lt;Super&gt;s" type="string" value="xfce4-settings-manager"/>
+      <property name="&lt;Super&gt;F12" type="string" value="sh -c &quot;$HOME/.scripts/toggle_dark_light/toggle_dark_light.sh&quot;"/>
     </property>
   </property>
   <property name="xfwm4" type="empty">
