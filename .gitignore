@@ -13,6 +13,10 @@
 .config/user-dirs.dirs
 .config/user-dirs.locale
 .config/Slack
+.config/Pd
+.config/gpick
+.config/htop
+.config/systemd/user
 .local/share/Trash
 .local/share/flatpak
 .local/share/gvfs-metadata
@@ -20,6 +24,7 @@
 .local/share/orca
 .local/share/nvim/lazy
 .local/share/recently-used.xbel
+.local/share/docker
 .local/state/nvim/lazy/readme/doc/
 .local/state/nvim/shada
 .local/state/nvim/dapui.log
@@ -45,3 +50,13 @@
 .zcompdump-WIL-LP-win-5.9
 .zcompdump-WIL-LP-win-5.9.zwc
 .zsh_history
+VirtualBox
+.docker
+.oh-my-zsh
+.pki
+Desktop
+Documents
+Downloads
+Pictures
+VirtualBox_VMs
+.pdsettings
