@@ -2,8 +2,9 @@
 application/pdf=libreoffice-draw.desktop;
 x-scheme-handler/http=xfce4-web-browser.desktop;
 x-scheme-handler/https=xfce4-web-browser.desktop;
+image/jpeg=display-im6.q16.desktop;org.xfce.ristretto.desktop;
 
 [Default Applications]
 x-scheme-handler/http=xfce4-web-browser.desktop
 x-scheme-handler/https=xfce4-web-browser.desktop
-
+image/jpeg=org.xfce.ristretto.desktop
