@@ -122,3 +122,5 @@ export PATH=$PATH:/opt/nvim-linux64/bin:/opt/lazygit/bin:/usr/sbin
 
 alias lazygit_dotfiles='lazygit --git-dir=$HOME/.dotfiles --work-tree=$HOME'
 alias git_dotfiles='git --git-dir=$HOME/.dotfiles --work-tree=$HOME'
+alias kcopy='kitty +kitten clipboard'
+alias kpaste='kitty +kitten clipboard --get-clipboard'
