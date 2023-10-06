@@ -73,3 +73,9 @@ VirtualBox_VMs
 .sudo_as_admin_successful
 **/*.swp
 .python_history
+.scripts/toggle_dark_light/dark_mode_active
+TLPUI
+tlpui
+dev
+touchegg
+nvim/lazy-lock.json
