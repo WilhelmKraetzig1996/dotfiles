@@ -16,8 +16,6 @@ do
         currently_connected=true
     fi
     if [ "$previously_connected" != "$currently_connected" ]; then
-        pid=`pidof conky`
-        kill $pid
-        conky
+        bash $1
     fi
 done
