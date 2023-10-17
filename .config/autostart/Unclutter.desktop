@@ -1,0 +1,13 @@
+[Desktop Entry]
+Encoding=UTF-8
+Version=0.9.4
+Type=Application
+Name=Unclutter
+Comment=remove mouse curser when idle
+Exec=unclutter -idle 5
+OnlyShowIn=XFCE;
+RunHook=0
+StartupNotify=false
+Terminal=false
+Hidden=false
+
