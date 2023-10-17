@@ -1,6 +1,7 @@
 .dotfiles
 .cache
 .config/xfce4/desktop
+.config/xfce4/xfce4-screenshooter
 .config/xfce4/xfconf/xfce-perchannel-xml/thunar.xml 
 .config/xfce4/xfconf/xfce-perchannel-xml/xfce4-desktop.xml
 .config/xfce4/xfconf/xfce-perchannel-xml/xfce4-settings-manager.xml
@@ -25,6 +26,8 @@
 .config/systemd/user
 .config/neofetch
 .config/ristretto
+.config/quodlibet
+.config/rncbc.org
 .local/share/Trash
 .local/share/flatpak
 .local/share/gvfs-metadata
@@ -38,6 +41,7 @@
 .local/state/nvim/dapui.log
 .local/state/nvim/log
 .local/state/gummyd
+.local/state/wireplumber
 .mozilla/
 .ssh
 .var/app/
@@ -79,3 +83,6 @@ tlpui
 dev
 touchegg
 nvim/lazy-lock.json
+.conda
+.gnupg
+ipython
