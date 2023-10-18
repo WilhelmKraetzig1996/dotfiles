@@ -77,7 +77,7 @@ vim.keymap.set('n', '<M-K>', dapui_eval, {})
 -- CPP
 require("dap").adapters.lldb = {
 	type = "executable",
-	command = "/usr/local/opt/llvm/bin/lldb-vscode",
+	command = "/usr/bin/lldb",
 	name = "lldb",
 }
 
@@ -92,7 +92,7 @@ local lldb = {
 			"file"
 		)
 	end,
-	cwd = "${workspaceFolder}",
+    cwd = vim.fn.getcwd(),
 	stopOnEntry = true,
 	args = {},
 	runInTerminal = false,
