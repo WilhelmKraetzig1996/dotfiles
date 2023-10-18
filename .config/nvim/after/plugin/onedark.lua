@@ -1,4 +1,4 @@
-vim.o.background = "light"
+-- vim.o.background = "light"
 
 function toggleBackgroundColor()
     if vim.o.background == "light" then
@@ -9,3 +9,7 @@ function toggleBackgroundColor()
 end
 
 vim.keymap.set("n", "<F12>",  toggleBackgroundColor)
+vim.api.nvim_create_autocmd({"Signal", }, {
+    pattern = "*",
+    callback = toggleBackgroundColor,
+})
