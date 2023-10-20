@@ -1,0 +1,10 @@
+[Desktop Entry]
+Version=1.0
+Type=Application
+Name=Rofi Power menu
+Comment=
+Exec=sh -c "$HOME/.config/rofi/scripts/powermenu_t3"
+Icon=power-off-panel
+Path=
+Terminal=false
+StartupNotify=false

@@ -48,7 +48,6 @@
       <property name="&lt;Primary&gt;&lt;Alt&gt;f" type="string" value="thunar"/>
       <property name="&lt;Primary&gt;&lt;Alt&gt;l" type="string" value="xflock4"/>
       <property name="&lt;Alt&gt;F1" type="string" value="xfce4-popup-applicationsmenu"/>
-      <property name="&lt;Super&gt;p" type="string" value="xfce4-display-settings --minimal"/>
       <property name="&lt;Primary&gt;&lt;Shift&gt;Escape" type="string" value="xfce4-taskmanager"/>
       <property name="&lt;Super&gt;e" type="string" value="thunar"/>
       <property name="&lt;Primary&gt;&lt;Alt&gt;Escape" type="string" value="xkill"/>
@@ -61,6 +60,7 @@
       <property name="&lt;Super&gt;F12" type="string" value="sh -c &quot;$HOME/.scripts/toggle_dark_light/toggle_dark_light.sh&quot;"/>
       <property name="&lt;Super&gt;c" type="string" value="slack"/>
       <property name="&lt;Super&gt;a" type="string" value="sh -c &quot;$HOME/.config/rofi/scripts/launcher_t5&quot;"/>
+      <property name="&lt;Super&gt;p" type="string" value="sh -c &quot;$HOME/.config/rofi/scripts/powermenu_t3&quot;"/>
     </property>
   </property>
   <property name="xfwm4" type="empty">
