@@ -10,6 +10,7 @@
 ## style-1   style-2   style-3   style-4   style-5
 
 # Current Theme
+
 dir="$HOME/.config/rofi/powermenu/type-3"
 theme='style-2'
 
@@ -55,6 +56,7 @@ run_rofi() {
 # Execute Command
 run_cmd() {
 	selected="$(confirm_exit)"
+    echo $selected
 	if [[ "$selected" == "$yes" ]]; then
 		if [[ $1 == '--shutdown' ]]; then
 			systemctl poweroff
@@ -73,6 +75,8 @@ run_cmd() {
 				i3-msg exit
 			elif [[ "$DESKTOP_SESSION" == 'plasma' ]]; then
 				qdbus org.kde.ksmserver /KSMServer logout 0 0 0
+			elif [[ "$DESKTOP_SESSION" == 'lightdm-xsession' ]]; then
+                xfce4-session-logout --logout
 			fi
 		fi
 	else
@@ -94,6 +98,8 @@ case ${chosen} in
 			betterlockscreen -l
 		elif [[ -x '/usr/bin/i3lock' ]]; then
 			i3lock
+		elif [[ -x '/usr/bin/xflock4' ]]; then
+			xfce4-session-logout -u
 		fi
         ;;
     $suspend)
