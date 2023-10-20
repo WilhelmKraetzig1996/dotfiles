@@ -81,7 +81,6 @@ VirtualBox_VMs
 TLPUI
 tlpui
 dev
-touchegg
 nvim/lazy-lock.json
 .conda
 .gnupg
