@@ -43,7 +43,6 @@
       <property name="Print" type="string" value="xfce4-screenshooter"/>
       <property name="&lt;Primary&gt;Escape" type="string" value="xfdesktop --menu"/>
       <property name="&lt;Shift&gt;Print" type="string" value="xfce4-screenshooter -r"/>
-      <property name="&lt;Primary&gt;&lt;Alt&gt;Delete" type="string" value="xfce4-session-logout"/>
       <property name="&lt;Alt&gt;&lt;Super&gt;s" type="string" value="orca"/>
       <property name="&lt;Primary&gt;&lt;Alt&gt;f" type="string" value="thunar"/>
       <property name="&lt;Primary&gt;&lt;Alt&gt;l" type="string" value="xflock4"/>
@@ -190,7 +189,6 @@
       <property name="&lt;Super&gt;Page_Up" type="string" value="tile_up_right_key"/>
       <property name="&lt;Super&gt;End" type="string" value="tile_down_left_key"/>
       <property name="&lt;Super&gt;Page_Down" type="string" value="tile_down_right_key"/>
-      <property name="&lt;Super&gt;q" type="string" value="close_window_key"/>
       <property name="&lt;Super&gt;d" type="string" value="show_desktop_key"/>
       <property name="&lt;Primary&gt;&lt;Super&gt;Right" type="string" value="next_workspace_key"/>
       <property name="&lt;Primary&gt;&lt;Super&gt;Left" type="string" value="prev_workspace_key"/>
@@ -198,6 +196,7 @@
       <property name="&lt;Primary&gt;&lt;Shift&gt;&lt;Super&gt;Right" type="string" value="move_window_right_workspace_key"/>
       <property name="&lt;Super&gt;F11" type="string" value="fullscreen_key"/>
       <property name="&lt;Super&gt;Down" type="string" value="hide_window_key"/>
+      <property name="&lt;Super&gt;q" type="string" value="close_window_key"/>
     </property>
   </property>
   <property name="providers" type="array">
