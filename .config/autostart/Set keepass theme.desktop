@@ -1,0 +1,13 @@
+[Desktop Entry]
+Encoding=UTF-8
+Version=0.9.4
+Type=Application
+Name=Set keepass theme
+Comment=Set keepass dark or light theme according to current theme
+Exec=sh -c "$HOME/.scripts/toggle_dark_light/set_mode.sh"
+OnlyShowIn=XFCE;
+RunHook=0
+StartupNotify=false
+Terminal=false
+Hidden=false
+
