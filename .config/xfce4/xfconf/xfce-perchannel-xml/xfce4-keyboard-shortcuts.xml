@@ -57,12 +57,10 @@
       <property name="override" type="bool" value="true"/>
       <property name="&lt;Super&gt;Return" type="string" value="exo-open --launch TerminalEmulator"/>
       <property name="&lt;Super&gt;f" type="string" value="exo-open --launch WebBrowser"/>
-      <property name="&lt;Super&gt;a" type="string" value="xfce4-appfinder">
-        <property name="startup-notify" type="bool" value="true"/>
-      </property>
       <property name="&lt;Super&gt;s" type="string" value="xfce4-settings-manager"/>
       <property name="&lt;Super&gt;F12" type="string" value="sh -c &quot;$HOME/.scripts/toggle_dark_light/toggle_dark_light.sh&quot;"/>
       <property name="&lt;Super&gt;c" type="string" value="slack"/>
+      <property name="&lt;Super&gt;a" type="string" value="sh -c &quot;$HOME/.config/rofi/scripts/launcher_t5&quot;"/>
     </property>
   </property>
   <property name="xfwm4" type="empty">
