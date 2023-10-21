@@ -30,8 +30,9 @@ no=''
 # Rofi CMD
 rofi_cmd() {
 	rofi -dmenu \
-		-p "Uptime: $uptime" \
-		-mesg "Uptime: $uptime" \
+		-p "$uptime
+$USER" \
+		-mesg "uptime\n$USER" \
 		-theme ${dir}/${theme}.rasi
 }
 
