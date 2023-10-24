@@ -36,19 +36,6 @@ $USER" \
 		-theme ${dir}/${theme}.rasi
 }
 
-# Confirmation CMD
-confirm_cmd() {
-	rofi -dmenu \
-		-p 'Confirmation' \
-		-mesg 'Are you Sure?' \
-		-theme ${dir}/shared/confirm.rasi
-}
-
-# Ask for confirmation
-confirm_exit() {
-	echo -e "$yes\n$no" | confirm_cmd
-}
-
 # Pass variables to rofi dmenu
 run_rofi() {
 	echo -e "$lock\n$suspend\n$logout\n$reboot\n$shutdown" | rofi_cmd
@@ -56,34 +43,28 @@ run_rofi() {
 
 # Execute Command
 run_cmd() {
-	selected="$(confirm_exit)"
-    echo $selected
-	if [[ "$selected" == "$yes" ]]; then
-		if [[ $1 == '--shutdown' ]]; then
-			systemctl poweroff
-		elif [[ $1 == '--reboot' ]]; then
-			systemctl reboot
-		elif [[ $1 == '--suspend' ]]; then
-			mpc -q pause
-			amixer set Master mute
-			systemctl suspend
-		elif [[ $1 == '--logout' ]]; then
-            pkill conky
-			if [[ "$DESKTOP_SESSION" == 'openbox' ]]; then
-				openbox --exit
-			elif [[ "$DESKTOP_SESSION" == 'bspwm' ]]; then
-				bspc quit
-			elif [[ "$DESKTOP_SESSION" == 'i3' ]]; then
-				i3-msg exit
-			elif [[ "$DESKTOP_SESSION" == 'plasma' ]]; then
-				qdbus org.kde.ksmserver /KSMServer logout 0 0 0
-			elif [[ "$DESKTOP_SESSION" == 'lightdm-xsession' ]]; then
-                xfce4-session-logout --logout
-			fi
-		fi
-	else
-		exit 0
-	fi
+    if [[ $1 == '--shutdown' ]]; then
+        systemctl poweroff
+    elif [[ $1 == '--reboot' ]]; then
+        systemctl reboot
+    elif [[ $1 == '--suspend' ]]; then
+        mpc -q pause
+        amixer set Master mute
+        systemctl suspend
+    elif [[ $1 == '--logout' ]]; then
+        pkill conky
+        if [[ "$DESKTOP_SESSION" == 'openbox' ]]; then
+            openbox --exit
+        elif [[ "$DESKTOP_SESSION" == 'bspwm' ]]; then
+            bspc quit
+        elif [[ "$DESKTOP_SESSION" == 'i3' ]]; then
+            i3-msg exit
+        elif [[ "$DESKTOP_SESSION" == 'plasma' ]]; then
+            qdbus org.kde.ksmserver /KSMServer logout 0 0 0
+        elif [[ "$DESKTOP_SESSION" == 'lightdm-xsession' ]]; then
+            xfce4-session-logout --logout
+        fi
+    fi
 }
 
 # Actions
