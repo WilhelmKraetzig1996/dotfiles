@@ -4,10 +4,10 @@ Version=0.9.4
 Type=Application
 Name=Conky
 Comment=
-Exec=conky
+Exec=sh -c "$HOME/.scripts/start_conky.py"
 OnlyShowIn=XFCE;
 RunHook=0
 StartupNotify=false
 Terminal=false
-Hidden=true
+Hidden=false
 
