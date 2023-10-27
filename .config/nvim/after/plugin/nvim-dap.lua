@@ -75,31 +75,27 @@ vim.keymap.set('n', '<M-K>', dapui_eval, {})
 
 
 -- CPP
-require("dap").adapters.lldb = {
-	type = "executable",
-	command = "/usr/bin/lldb",
-	name = "lldb",
+local dap = require('dap')
+dap.adapters.cppdbg = {
+  id = 'cppdbg',
+  type = 'executable',
+  command = '/home/dear/Downloads/cpptools-linux/extension/debugAdapters/bin/OpenDebugAD7',
 }
+local cppdbg = {
+  {
+    name = "Launch file",
+    type = "cppdbg",
+    request = "launch",
+    program = function()
+      return vim.fn.input('Path to executable: ', vim.fn.getcwd() .. '/', 'file')
+    end,
+    cwd = '${workspaceFolder}',
+    stopAtEntry = true,
 
-local lldb = {
-	name = "Launch lldb",
-	type = "lldb",
-	request = "launch", -- could also attach to a currently running process
-	program = function()
-		return vim.fn.input(
-			"Path to executable: ",
-			vim.fn.getcwd() .. "/",
-			"file"
-		)
-	end,
-    cwd = vim.fn.getcwd(),
-	stopOnEntry = true,
-	args = {},
-	runInTerminal = false,
+  }
 }
-
-dap.configurations.rust = { lldb }
-dap.configurations.cpp = { lldb }
+dap.configurations.cpp = cppdbg
+dap.configurations.c = cppdbg
 
 table.insert(require('dap').configurations.python, {
   type = 'python',
