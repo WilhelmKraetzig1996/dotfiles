@@ -39,6 +39,8 @@ require("lazy").setup(
     'hrsh7th/cmp-path',
     'hrsh7th/cmp-nvim-lsp',
     'hrsh7th/cmp-nvim-lua',
+    'hrsh7th/vim-vsnip',
+    'hrsh7th/vim-vsnip-integ',
     'rafamadriz/friendly-snippets',
     'onsails/lspkind.nvim',
     'github/copilot.vim',
@@ -48,5 +50,3 @@ require("lazy").setup(
     'theHamsta/nvim-dap-virtual-text',
     'mfussenegger/nvim-dap-python',
 })
-require('onedark').setup {}
-require('onedark').load()
