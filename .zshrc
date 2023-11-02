@@ -118,25 +118,10 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 export VISUAL=nvim
-export PATH=$PATH:/opt/nvim-linux64/bin:/opt/lazygit/bin:/usr/sbin:/opt/miniconda3/bin
+export PATH=$PATH:/opt/nvim-linux64/bin:/opt/lazygit/bin:/usr/sbin:/opt/miniconda3/bin:$HOME/.scripts/build
 
 alias lazygit_dotfiles='lazygit --git-dir=$HOME/.dotfiles --work-tree=$HOME'
 alias git_dotfiles='git --git-dir=$HOME/.dotfiles --work-tree=$HOME'
 alias kcopy='kitty +kitten clipboard'
 alias kpaste='kitty +kitten clipboard --get-clipboard'
 alias kpic='kitty +kitten icat'
-
-# >>> conda initialize >>>
-# !! Contents within this block are managed by 'conda init' !!
-__conda_setup="$('/opt/miniconda3/bin/conda' 'shell.zsh' 'hook' 2> /dev/null)"
-if [ $? -eq 0 ]; then
-    eval "$__conda_setup"
-else
-    if [ -f "/opt/miniconda3/etc/profile.d/conda.sh" ]; then
-        . "/opt/miniconda3/etc/profile.d/conda.sh"
-    else
-        export PATH="/opt/miniconda3/bin:$PATH"
-    fi
-fi
-unset __conda_setup
-# <<< conda initialize <<<
