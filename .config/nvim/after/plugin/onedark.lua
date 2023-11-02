@@ -8,11 +8,11 @@ if file_exists(os.getenv("HOME") .. "/.scripts/toggle_dark_light/dark_mode_activ
     -- vim.o.background = "dark"
     require('onedark').setup {
         colors = {
-            bg0 = "#29353b",
+            bg0 = "#222d32",
             bg1 = "#29313B",
             bg2 = "#393f4a",
             bg3 = "#475156",
-            bg_d = "#212b30",
+            bg_d = "#29353b",
             fg = "#c6d0d3",
         },
     }
@@ -37,11 +37,11 @@ function toggleBackgroundColor()
         vim.o.background = "dark"
         require('onedark').setup {
             colors = {
-                bg0 = "#29353b",
+                bg0 = "#222d32",
                 bg1 = "#29313B",
                 bg2 = "#393f4a",
                 bg3 = "#475156",
-                bg_d = "#212b30",
+                bg_d = "#29353b",
                 fg = "#c6d0d3",
             },
         }
