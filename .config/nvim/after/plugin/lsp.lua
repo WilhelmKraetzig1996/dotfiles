@@ -8,6 +8,17 @@ lsp.ensure_installed({
     'cmake',
 })
 
+require('lspconfig').clangd.setup {
+    -- on_attach = keybinds.on_attach,
+    cmd = {
+        "clangd",
+        "--background-index",
+        "--suggest-missing-includes",
+        -- "--compile-commands-dir=/home/localuser/test/build",
+    },
+    filetypes = { "c", "cpp", "objc", "objcpp" },
+}
+
 lsp.on_attach(function(client, bufnr)
 	local opts = { buffer = bufnr, remap = false }
     local bufopts = { noremap=true, silent=true, buffer=bufnr }
