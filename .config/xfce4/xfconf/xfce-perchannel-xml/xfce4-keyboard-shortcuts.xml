@@ -60,6 +60,7 @@
       <property name="&lt;Super&gt;c" type="string" value="slack"/>
       <property name="&lt;Super&gt;a" type="string" value="sh -c &quot;$HOME/.config/rofi/scripts/launcher_t5&quot;"/>
       <property name="&lt;Super&gt;p" type="string" value="sh -c &quot;$HOME/.config/rofi/scripts/powermenu_t3&quot;"/>
+      <property name="&lt;Super&gt;q" type="string" value="sh -c &quot;$HOME/.scripts/start_custom_power_menu.sh&quot;"/>
     </property>
   </property>
   <property name="xfwm4" type="empty">
@@ -196,7 +197,6 @@
       <property name="&lt;Primary&gt;&lt;Shift&gt;&lt;Super&gt;Right" type="string" value="move_window_right_workspace_key"/>
       <property name="&lt;Super&gt;F11" type="string" value="fullscreen_key"/>
       <property name="&lt;Super&gt;Down" type="string" value="hide_window_key"/>
-      <property name="&lt;Super&gt;q" type="string" value="close_window_key"/>
     </property>
   </property>
   <property name="providers" type="array">
