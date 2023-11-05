@@ -18,12 +18,12 @@ configuration {
 
 * {
     /* Resolution : 1920x1080 */
-    box-spacing:                 50px;
-    box-margin:                  300px 200px;
+    box-spacing:                 5%;
+    box-margin:                  28% 12%;
     inputbar-spacing:            0px;
-    list-spacing:                30px;
-    general-padding:             20px;
-    element-padding:             80px 10px;
+    list-spacing:                3%;
+    general-padding:             2%;
+    element-padding:             7% 1%;
     element-radius:              100%;
     general-radius:              100%;
     element-font:                "feather 64";
@@ -36,7 +36,7 @@ window {
     location:                    center;
     anchor:                      center;
     fullscreen:                  true;
-    width:                       1366px;
+    width:                       71%;
     x-offset:                    0px;
     y-offset:                    0px;
 
