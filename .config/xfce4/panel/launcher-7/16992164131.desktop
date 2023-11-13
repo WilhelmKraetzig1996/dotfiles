@@ -1,0 +1,13 @@
+[Desktop Entry]
+Name=2000K
+Comment=
+GenericName=Bulk Rename
+Keywords=bulk;renamer;renaming;thunar;files;folders;directory;directories;
+Exec=sh -c "gummy start & gummy -t 2000"
+Icon=redeyes
+Terminal=false
+StartupNotify=true
+Type=Application
+Categories=Utility;Core;GTK;Filesystem;
+X-XFCE-Source=file:///usr/share/applications/thunar-bulk-rename.desktop
+Path=

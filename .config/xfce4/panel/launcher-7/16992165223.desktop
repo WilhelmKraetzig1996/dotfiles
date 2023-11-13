@@ -1,0 +1,10 @@
+[Desktop Entry]
+Version=1.0
+Type=Application
+Name=6500K
+Comment=
+Exec=sh -c "gummy start & gummy -t 6500"
+Icon=redeyes
+Path=
+Terminal=false
+StartupNotify=false
