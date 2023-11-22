@@ -33,6 +33,7 @@ require("lazy").setup(
     'vim-airline/vim-airline',
     'voldikss/vim-floaterm',
     'tpope/vim-commentary',
+    'rmagatti/goto-preview',
     -- autocompletion
     'hrsh7th/nvim-cmp',
     'hrsh7th/cmp-buffer',
