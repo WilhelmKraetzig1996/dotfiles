@@ -17,7 +17,7 @@
       </property>
       <property name="Position" type="empty">
         <property name="X" type="int" value="0"/>
-        <property name="Y" type="int" value="1113"/>
+        <property name="Y" type="int" value="0"/>
       </property>
     </property>
     <property name="DisplayPort-0" type="string" value="HPN 28&quot;">
@@ -87,7 +87,7 @@
       </property>
       <property name="Position" type="empty">
         <property name="X" type="int" value="0"/>
-        <property name="Y" type="int" value="1113"/>
+        <property name="Y" type="int" value="0"/>
       </property>
     </property>
     <property name="DisplayPort-0" type="string" value="HPN 28&quot;">
