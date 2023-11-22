@@ -1,5 +1,5 @@
 [Added Associations]
-application/pdf=com.brave.Browser.desktop;libreoffice-draw.desktop;
+application/pdf=com.brave.Browser.desktop;libreoffice-draw.desktop;org.mozilla.firefox.desktop;
 x-scheme-handler/http=xfce4-web-browser.desktop;
 x-scheme-handler/https=xfce4-web-browser.desktop;
 image/jpeg=display-im6.q16.desktop;org.xfce.ristretto.desktop;
@@ -13,3 +13,4 @@ x-scheme-handler/https=xfce4-web-browser.desktop
 image/jpeg=org.xfce.ristretto.desktop
 text/plain=userapp-kitty nvim-D01DC2.desktop
 text/markdown=userapp-kitty nvim-D01DC2.desktop
+application/pdf=org.mozilla.firefox.desktop
