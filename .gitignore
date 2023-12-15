@@ -1,5 +1,8 @@
 .dotfiles
 .cache
+.config/github-copilot
+.config/kitty/current-theme.conf
+.config/libvirt
 .config/xfce4/desktop
 .config/xfce4/xfce4-screenshooter
 .config/xfce4/xfconf/xfce-perchannel-xml/thunar.xml 
@@ -11,11 +14,11 @@
 .config/gtk-3.0
 .config/keepassxc
 .config/libreoffice
-.config/nvim/lazy-lock.json
 .config/pulse
 .config/syncthing
 .config/lazygit
 .config/QtProject.conf
+.config/qt5ct
 .config/pavucontrol.ini
 .config/user-dirs.dirs
 .config/user-dirs.locale
@@ -28,6 +31,9 @@
 .config/ristretto
 .config/quodlibet
 .config/rncbc.org
+.config/touchegg
+.config/vlc
+.config/gummyconf.json
 .local/bin/
 .local/lib/python3.11/site-packages
 .local/share/doc
