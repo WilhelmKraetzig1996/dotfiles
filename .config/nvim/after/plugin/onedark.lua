@@ -3,7 +3,7 @@ function file_exists(name)
    if f~=nil then io.close(f) return true else return false end
 end
 
-if file_exists(os.getenv("HOME") .. "/.scripts/toggle_dark_light/dark_mode_active") then
+if vim.loop.os_uname().sysname == "Linux" and file_exists(os.getenv("HOME") .. "/.scripts/toggle_dark_light/dark_mode_active") then
 -- if file_exists("/home/dear/.scripts/toggle_dark_light/dark_mode_active") then
     -- vim.o.background = "dark"
     require('onedark').setup {
