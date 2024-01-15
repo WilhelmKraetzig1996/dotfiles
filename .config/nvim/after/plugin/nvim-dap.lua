@@ -91,6 +91,7 @@ elseif vim.loop.os_uname().sysname == "Darwin" then
       id = 'cppdbg',
       type = 'executable',
       command = '/Users/wilhelm/cpptools/extension/debugAdapters/bin/OpenDebugAD7',
+      miDebuggerPath = '/usr/local/bin/gdb',
     }
 else
     dir_sep  = '\\'
