@@ -86,12 +86,20 @@ if vim.loop.os_uname().sysname == "Linux" then
     }
 elseif vim.loop.os_uname().sysname == "Darwin" then
     dir_sep  = '/'
-    adapter = 'cppdbg'
-    dap.adapters.cppdbg = {
-      id = 'cppdbg',
-      type = 'executable',
-      command = '/Users/wilhelm/cpptools/extension/debugAdapters/bin/OpenDebugAD7',
-      miDebuggerPath = '/usr/local/bin/gdb',
+    adapter = 'codelldb'
+    local dap = require('dap')
+    dap.adapters.codelldb = {
+      type = 'server',
+      host = '127.0.0.1',
+      port = 13000 -- 💀 Use the port printed out or specified with `--port`
+    }
+    dap.adapters.codelldb = {
+      type = 'server',
+      port = "${port}",
+      executable = {
+        command = '/Users/wilhelm/codelldb/extension/adapter/codelldb',
+        args = {"--port", "${port}"},
+      }
     }
 else
     dir_sep  = '\\'
