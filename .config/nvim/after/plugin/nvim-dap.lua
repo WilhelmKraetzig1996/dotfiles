@@ -91,7 +91,7 @@ elseif vim.loop.os_uname().sysname == "Darwin" then
     dap.adapters.codelldb = {
       type = 'server',
       host = '127.0.0.1',
-      port = 13000
+      port = 13000,
       executable = {
         command = '/Users/wilhelm/codelldb/extension/adapter/codelldb',
         args = {"--port", "${port}"},
@@ -103,7 +103,7 @@ else
     dap.adapters.codelldb = {
       type = 'server',
       host = '127.0.0.1',
-      port = 13000
+      port = 13000,
       executable = {
         command = 'C:\\Users\\Wilhelm\\codellb\\extension\\adapter\\codelldb.exe',
         args = {"--port", "${port}"},
