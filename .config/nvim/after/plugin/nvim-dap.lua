@@ -76,18 +76,48 @@ vim.keymap.set('n', '<M-K>', dapui_eval, {})
 
 -- CPP
 local dap = require('dap')
-dap.adapters.cppdbg = {
-  id = 'cppdbg',
-  type = 'executable',
-  command = '/home/dear/.var/cpptools-linux/extension/debugAdapters/bin/OpenDebugAD7',
-}
+if vim.loop.os_uname().sysname == "Linux" then
+    dir_sep  = '/'
+    adapter = 'cppdbg'
+    dap.adapters.cppdbg = {
+      id = 'cppdbg',
+      type = 'executable',
+      command = '/home/dear/.var/cpptools-linux/extension/debugAdapters/bin/OpenDebugAD7',
+    }
+elseif vim.loop.os_uname().sysname == "Darwin" then
+    dir_sep  = '/'
+    adapter = 'cppdbg'
+    dap.adapters.cppdbg = {
+      id = 'cppdbg',
+      type = 'executable',
+      command = '/Users/wilhelm/cpptools/extension/debugAdapters/bin/OpenDebugAD7',
+    }
+else
+    dir_sep  = '\\'
+    adapter = 'codelldb'
+    local dap = require('dap')
+    dap.adapters.codelldb = {
+      type = 'server',
+      host = '127.0.0.1',
+      port = 13000 -- 💀 Use the port printed out or specified with `--port`
+    }
+    dap.adapters.codelldb = {
+      type = 'server',
+      port = "${port}",
+      executable = {
+        command = 'C:\\Users\\Wilhelm\\codellb\\extension\\adapter\\codelldb.exe',
+        args = {"--port", "${port}"},
+        detached = false,
+      }
+    }
+end
 local cppdbg = {
   {
     name = "Launch file",
-    type = "cppdbg",
+    type = adapter,
     request = "launch",
     program = function()
-      return vim.fn.input('Path to executable: ', vim.fn.getcwd() .. '/', 'file')
+      return vim.fn.input('Path to executable: ', vim.fn.getcwd() .. dir_sep, 'file')
     end,
     cwd = '${workspaceFolder}',
     stopAtEntry = false,
