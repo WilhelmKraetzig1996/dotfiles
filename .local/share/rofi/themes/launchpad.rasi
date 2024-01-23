@@ -4,7 +4,7 @@
  * Theme Repo           : https://github.com/lr-tech/rofi-themes-collection
  *******************************************************************************/
 configuration {
-    icon-theme: "Zafiro-Icons-Light";
+    icon-theme: "Flat-Remix-Blue-Dark";
 }
 
 * {
