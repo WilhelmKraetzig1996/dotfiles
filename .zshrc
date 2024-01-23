@@ -119,6 +119,7 @@ source $ZSH/oh-my-zsh.sh
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 export VISUAL=nvim
 export PATH=$PATH:/opt/nvim-linux64/bin:/opt/lazygit/bin:/usr/sbin:/opt/miniconda3/bin:$HOME/.scripts/build
+export SSH_AUTH_SOCK="$XDG_RUNTIME_DIR/ssh-agent.socket"
 
 alias lazygit_dotfiles='lazygit --git-dir=$HOME/.dotfiles --work-tree=$HOME'
 alias git_dotfiles='git --git-dir=$HOME/.dotfiles --work-tree=$HOME'
