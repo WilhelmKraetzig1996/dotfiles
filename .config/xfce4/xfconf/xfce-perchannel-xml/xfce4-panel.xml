@@ -120,5 +120,16 @@
       <property name="style" type="uint" value="0"/>
       <property name="expand" type="bool" value="false"/>
     </property>
+    <property name="plugin-7" type="string" value="launcher">
+      <property name="items" type="array">
+        <value type="string" value="16992164131.desktop"/>
+        <value type="string" value="16992165494.desktop"/>
+        <value type="string" value="16992164162.desktop"/>
+        <value type="string" value="16992165223.desktop"/>
+      </property>
+      <property name="show-label" type="bool" value="false"/>
+      <property name="move-first" type="bool" value="false"/>
+      <property name="arrow-position" type="uint" value="5"/>
+    </property>
   </property>
 </channel>
