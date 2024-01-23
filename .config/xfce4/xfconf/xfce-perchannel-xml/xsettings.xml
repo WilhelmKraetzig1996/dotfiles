@@ -2,8 +2,8 @@
 
 <channel name="xsettings" version="1.0">
   <property name="Net" type="empty">
-    <property name="ThemeName" type="string" value="Adapta-Purple-Nokto"/>
-    <property name="IconThemeName" type="string" value="Zafiro-Icons-Dark"/>
+    <property name="ThemeName" type="string" value="Flat-Remix-GTK-Blue"/>
+    <property name="IconThemeName" type="string" value="Flat-Remix-Blue-Light-darkPanel"/>
     <property name="DoubleClickTime" type="empty"/>
     <property name="DoubleClickDistance" type="empty"/>
     <property name="DndDragThreshold" type="empty"/>

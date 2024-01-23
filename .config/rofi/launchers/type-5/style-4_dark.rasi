@@ -41,7 +41,7 @@ window {
     padding:                     0px;
     border-radius:               0px;
     cursor:                      "default";
-    background-color:            #FAFAFA;
+    background-color:            #000000;
 }
 
 /*****----- Main Box -----*****/
@@ -152,7 +152,7 @@ mode-switcher{
     margin:                      0px 200px;
     padding:                     12px;
     border-radius:               100%;
-    background-color:            #F4F4F4;
+    background-color:            #121212;
 }
 button {
     background-color:            inherit;
@@ -168,7 +168,7 @@ button selected {
 /*****----- Message -----*****/
 error-message {
     padding:                     20px;
-    background-color:            #FAFAFA;
+    background-color:            #000000;
     text-color:                  white;
 }
 message {

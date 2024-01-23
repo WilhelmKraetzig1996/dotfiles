@@ -8,12 +8,12 @@ if vim.loop.os_uname().sysname == "Linux" and file_exists(os.getenv("HOME") .. "
     -- vim.o.background = "dark"
     require('onedark').setup {
         colors = {
-            bg0 = "#222d32",
-            bg1 = "#29313B",
-            bg2 = "#393f4a",
-            bg3 = "#475156",
-            bg_d = "#29353b",
-            fg = "#c6d0d3",
+            bg0 = "#030303",
+            bg1 = "#131313",
+            bg2 = "#232323",
+            bg3 = "#333333",
+            bg_d = "#434343",
+            fg = "#f4f4f4",
         },
     }
 else
@@ -37,12 +37,12 @@ function toggleBackgroundColor()
         vim.o.background = "dark"
         require('onedark').setup {
             colors = {
-                bg0 = "#222d32",
-                bg1 = "#29313B",
-                bg2 = "#393f4a",
-                bg3 = "#475156",
-                bg_d = "#29353b",
-                fg = "#c6d0d3",
+                bg0 = "#030303",
+                bg1 = "#131313",
+                bg2 = "#232323",
+                bg3 = "#333333",
+                bg_d = "#434343",
+                fg = "#f4f4f4",
             },
         }
     else
