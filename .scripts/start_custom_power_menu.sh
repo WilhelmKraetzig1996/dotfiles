@@ -8,7 +8,7 @@ elif [[ "$(xdotool getwindowfocus getwindowname)" == *"Slack"* ]] || [[ "$(xdoto
     win_width=$(xdotool getactivewindow getwindowgeometry | grep Geometry | cut -d " " -f 4 | cut -d "x" -f 1)
 
     close_button_pos_x=$((win_pos_x+win_width-5))
-    close_button_pos_y=$((win_pos_y-30))
+    close_button_pos_y=$((win_pos_y-40))
     prev_mouse_pos_x=$(xdotool getmouselocation | cut -d " " -f 1 | cut -d ":" -f 2)
     prev_mouse_pos_y=$(xdotool getmouselocation | cut -d " " -f 2 | cut -d ":" -f 2)
     xdotool mousemove $close_button_pos_x $close_button_pos_y
