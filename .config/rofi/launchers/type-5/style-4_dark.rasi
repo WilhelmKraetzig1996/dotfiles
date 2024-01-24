@@ -21,7 +21,7 @@ configuration {
 
 /*****----- Global Properties -----*****/
 * {
-    font:                        "Monospace Regular 12";
+    font:                        "JetBrainsMono Nerd Font 12";
 }
 
 /*****----- Main Window -----*****/
@@ -152,13 +152,13 @@ mode-switcher{
     margin:                      0px 200px;
     padding:                     12px;
     border-radius:               100%;
-    background-color:            #121212;
+    background-color:            #1f1f1f;
 }
 button {
     background-color:            inherit;
-    text-color:                  white;
+    text-color:                  black;
     cursor:                      pointer;
-    font:                        "Monospace Regular 36";
+    font:                        "JetBrainsMono Nerd Font 36";
 }
 button selected {
     background-color:            inherit;

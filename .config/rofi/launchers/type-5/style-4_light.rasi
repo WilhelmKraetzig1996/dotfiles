@@ -21,7 +21,7 @@ configuration {
 
 /*****----- Global Properties -----*****/
 * {
-    font:                        "Monospace Regular 12";
+    font:                        "JetBrainsMono Nerd Font 12";
 }
 
 /*****----- Main Window -----*****/
@@ -71,8 +71,8 @@ textbox-prompt-colon {
     expand:                      false;
     padding:                     8px 11px;
     border-radius:               100%;
-    background-color:            white;
-    text-color:                  black;
+    background-color:            black;
+    text-color:                  white;
     str:                         "";
 }
 entry {
@@ -158,7 +158,7 @@ button {
     background-color:            inherit;
     text-color:                  white;
     cursor:                      pointer;
-    font:                        "Monospace Regular 36";
+    font:                        "JetBrainsMono Nerd Font 36";
 }
 button selected {
     background-color:            inherit;
@@ -168,7 +168,7 @@ button selected {
 /*****----- Message -----*****/
 error-message {
     padding:                     20px;
-    background-color:            #FAFAFA;
+    background-color:            #f2f2f2;
     text-color:                  white;
 }
 message {
