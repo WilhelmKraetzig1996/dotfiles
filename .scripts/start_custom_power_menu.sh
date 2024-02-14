@@ -2,6 +2,9 @@
 
 if [ "$(xdotool getwindowfocus getwindowname)" = "Desktop" ]; then
     $HOME/.config/rofi/scripts/powermenu_t3
+elif [[ $(xprop -id $(xdotool getactivewindow)| grep WM_CLASS | grep kitty | wc -l) -ne 0 ]]; then
+    rm /tmp/kittysocket
+    xdotool getwindowfocus windowclose
 elif [[ "$(xdotool getwindowfocus getwindowname)" == *"Slack"* ]] || [[ "$(xdotool getwindowfocus getwindowname)" == *"A PipeWire Graph Qt GUI Interface"* ]]; then
     win_pos_x=$(xdotool getactivewindow getwindowgeometry | grep Position | cut -d " " -f 4 | cut -d "," -f 1)
     win_pos_y=$(xdotool getactivewindow getwindowgeometry | grep Position | cut -d " " -f 4 | cut -d "," -f 2)
