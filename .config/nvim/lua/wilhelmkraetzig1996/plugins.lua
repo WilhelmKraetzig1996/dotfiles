@@ -34,6 +34,7 @@ require("lazy").setup(
     'voldikss/vim-floaterm',
     'tpope/vim-commentary',
     'rmagatti/goto-preview',
+    'andrewferrier/wrapping.nvim',
     -- autocompletion
     'hrsh7th/nvim-cmp',
     'hrsh7th/cmp-buffer',
