@@ -1,5 +1,5 @@
 require'nvim-treesitter.configs'.setup {
-  ensure_installed = { "cpp", "python", "javascript", "c", "lua", "markdown", "markdown_inline"},
+  ensure_installed = { "cpp", "python", "javascript", "c", "lua", "markdown", "markdown_inline", "bash", "yaml"},
   sync_install = true,
   auto_install = true,
   highlight = {

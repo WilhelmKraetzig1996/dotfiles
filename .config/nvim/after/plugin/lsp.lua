@@ -2,11 +2,6 @@ local lsp = require('lsp-zero')
 lsp.preset('recommended')
 vim.g.python_host_prog = '/usr/local/bin/python'
 vim.g.python3_host_prog = '/usr/local/bin/python3'
-lsp.ensure_installed({
-    'clangd',
-    'pylsp',
-    'cmake',
-})
 
 require('lspconfig').clangd.setup {
     -- on_attach = keybinds.on_attach,
@@ -35,7 +30,7 @@ lsp.on_attach(function(client, bufnr)
 	vim.keymap.set("n", "<leader>ca", vim.lsp.buf.code_action, opts)
 	vim.keymap.set("n", "<leader>gr", vim.lsp.buf.references, opts)
 	vim.keymap.set("n", "<leader>rn", vim.lsp.buf.rename, opts)
-	vim.keymap.set("i", "<leader>h", vim.lsp.buf.signature_help, opts)
+	vim.keymap.set("n", "<leader>h", vim.lsp.buf.signature_help, opts)
     vim.keymap.set("n", '<leader>gh', '<cmd>ClangdSwitchSourceHeader<cr>')
     vim.keymap.set('n', '<leader>lf', function() vim.lsp.buf.format { async = true } end, bufopts)   
 end)
@@ -116,8 +111,6 @@ require('lspconfig')['pylsp'].setup {
     }
   }
 }
-
-require'lspconfig'.pyright.setup{}
 
 local lspkind = require('lspkind')
 cmp.setup {
