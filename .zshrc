@@ -222,12 +222,9 @@ zle -N _atuin_up_search_widget _atuin_up_search
 bindkey -M emacs '^r' atuin-search
 bindkey -M viins '^r' atuin-search-viins
 bindkey -M vicmd '/' atuin-search
-bindkey -M emacs '^[[A' atuin-up-search
-bindkey -M vicmd '^[[A' atuin-up-search-vicmd
-bindkey -M viins '^[[A' atuin-up-search-viins
-bindkey -M emacs '^[OA' atuin-up-search
-bindkey -M vicmd '^[OA' atuin-up-search-vicmd
-bindkey -M viins '^[OA' atuin-up-search-viins
+# bindkey -M emacs '^[OA' atuin-up-search
+# bindkey -M vicmd '^[OA' atuin-up-search-vicmd
+# bindkey -M viins '^[OA' atuin-up-search-viins
 bindkey -M vicmd 'k' atuin-up-search-vicmd
 
 export VISUAL=nvim
@@ -240,4 +237,6 @@ alias kcopy='kitty +kitten clipboard'
 alias kpaste='kitty +kitten clipboard --get-clipboard'
 alias kpic='kitty +kitten icat'
 alias ktitle='kitty @ set-tab-title $(basename $(pwd))'
-alias search='ag --nobreak --nonumbers --noheading --all-types . | fzf'
+alias search='ag --nobreak --nonumbers --noheading --all-types . | fzf --preview "batcat $(echo {} | cut -d ":" -f 1| cut -d ":" -f 1)"'
+alias cat='batcat'
+alias fzf='fzf --preview "batcat --color=always --style=numbers --line-range=:500 {}"'
