@@ -58,6 +58,7 @@
 .local/share/docker
 .local/share/jupyter
 .local/share/octave
+.local/share/atuin
 .local/state/nvim/lazy/readme/doc/
 .local/state/nvim/shada
 .local/state/nvim/dapui.log
