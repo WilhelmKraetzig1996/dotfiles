@@ -34,6 +34,11 @@
 .config/touchegg
 .config/vlc
 .config/gummyconf.json
+.config/Thunar
+.config/borg
+.config/atuin
+.config/btop
+.config/octave
 .local/bin/
 .local/lib/python3.11/site-packages
 .local/share/doc
@@ -51,6 +56,8 @@
 .local/share/nvim/lazy
 .local/share/recently-used.xbel
 .local/share/docker
+.local/share/jupyter
+.local/share/octave
 .local/state/nvim/lazy/readme/doc/
 .local/state/nvim/shada
 .local/state/nvim/dapui.log
@@ -59,6 +66,7 @@
 .local/state/wireplumber
 .local/state/nvim
 .local/state/nix
+.local/kitty.app
 .mozilla/
 .ssh
 .var/app/
@@ -109,3 +117,14 @@ ipython
 .pip
 vm
 .nix-profile
+.ipython
+.java
+.jupyter
+.npm
+.password-store
+.virtualenvs
+.vnc
+.wine
+.zoom
+Music
+
