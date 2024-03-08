@@ -238,5 +238,5 @@ alias kpaste='kitty +kitten clipboard --get-clipboard'
 alias kpic='kitty +kitten icat'
 alias ktitle='kitty @ set-tab-title $(basename $(pwd))'
 alias search='ag --nobreak --nonumbers --noheading --all-types . | fzf --preview '\''cat "$(echo {} | cut -d: -f1)"'\'''
-alias cat='batcat'
+alias cat=$HOME/.scripts/start_batcat.sh
 alias fzf='fzf --preview "batcat --color=always --style=numbers --line-range=:500 {}"'
