@@ -117,7 +117,7 @@ local cppdbg = {
     type = adapter,
     request = "launch",
     program = function()
-      return vim.fn.input('Path to executable: ', vim.fn.getcwd() .. dir_sep, 'file')
+      return vim.fn.input('Path to executable: ', '', 'file')
     end,
     cwd = '${workspaceFolder}',
     stopAtEntry = false,
