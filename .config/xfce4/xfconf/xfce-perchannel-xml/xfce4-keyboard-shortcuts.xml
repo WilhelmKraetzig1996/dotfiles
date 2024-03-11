@@ -61,6 +61,8 @@
       <property name="&lt;Super&gt;c" type="string" value="flatpak run com.slack.Slack"/>
       <property name="&lt;Super&gt;Return" type="string" value="/bin/bash -c &quot;$HOME/.scripts/start_kitty.sh&quot;"/>
       <property name="&lt;Super&gt;f" type="string" value="flatpak run org.mozilla.firefox"/>
+      <property name="&lt;Super&gt;1" type="string" value="sh -c &quot;$HOME/.scripts/pipewire/next_source.sh&quot;"/>
+      <property name="&lt;Super&gt;2" type="string" value="sh -c &quot;$HOME/.scripts/pipewire/next_sink.sh&quot;"/>
     </property>
   </property>
   <property name="xfwm4" type="empty">
