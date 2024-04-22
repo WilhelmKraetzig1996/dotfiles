@@ -8,6 +8,11 @@ elif [[ $(xprop -id $(xdotool getactivewindow)| grep WM_CLASS | grep kitty | wc 
 elif [[ "$(xdotool getwindowfocus getwindowname)" == *"Slack"* ]] || [[ "$(xdotool getwindowfocus getwindowname)" == *"A PipeWire Graph Qt GUI Interface"* ]]; then
     xdotool keyup q
     xdotool key --clearmodifiers ctrl+w
+
+elif [[ "$(xdotool getwindowfocus getwindowname)" == *"VLC media player"* ]]; then
+    killall -s 9 vlc
+elif [[ "$(xdotool getwindowfocus getwindowname)" == *"KeePassXC"* ]]; then
+    killall keepassxc
 else
     xdotool getwindowfocus windowclose
 fi
