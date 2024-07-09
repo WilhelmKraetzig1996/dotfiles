@@ -13,6 +13,9 @@ elif [[ "$(xdotool getwindowfocus getwindowname)" == *"VLC media player"* ]]; th
     killall -s 9 vlc
 elif [[ "$(xdotool getwindowfocus getwindowname)" == *"KeePassXC"* ]]; then
     killall keepassxc
+elif [[ "$(xdotool getwindowfocus getwindowname)" == *"Microsoft Teams" ]]; then
+    xdotool keyup q
+    xdotool key --clearmodifiers ctrl+h
 else
     xdotool getwindowfocus windowclose
 fi
