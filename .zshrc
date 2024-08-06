@@ -240,3 +240,4 @@ alias ktitle='kitty @ set-tab-title $(basename $(pwd))'
 alias search='ag --nobreak --nonumbers --noheading --all-types . | fzf --preview '\''cat "$(echo {} | cut -d: -f1)"'\'''
 alias cat=$HOME/.scripts/start_batcat.sh
 alias fzf='fzf --preview "batcat --color=always --style=numbers --line-range=:500 {}"'
+alias ssh='kitty +kitten ssh'
