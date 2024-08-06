@@ -11,3 +11,4 @@ vim.keymap.set('n', '<F10>', '<C-c><cmd>FloatermShow shell<cr>', { noremap = tru
 vim.keymap.set('i', '<F10>', '<C-c><ESC><cmd>FloatermShow shell<cr>', { noremap = true, silent = true })
 vim.keymap.set('t', '<F10>', '<C-\\><C-N><cmd>FloatermHide<cr>', { noremap = true, silent = true })
 vim.g.floaterm_autoclose = 2
+vim.cmd('stopinsert')
