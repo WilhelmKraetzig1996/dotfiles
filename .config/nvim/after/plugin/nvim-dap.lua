@@ -126,6 +126,12 @@ local cppdbg = {
 }
 dap.configurations.cpp = cppdbg
 dap.configurations.c = cppdbg
+dap.set_exception_breakpoints({
+    {"cpp_throw", true},
+    {"cpp_catch", true},
+    {"cpp_abort", true},
+    {"cpp_assert", true}
+})
 
 table.insert(require('dap').configurations.python, {
   type = 'python',

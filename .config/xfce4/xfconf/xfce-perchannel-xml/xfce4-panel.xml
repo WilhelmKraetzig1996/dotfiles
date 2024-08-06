@@ -4,7 +4,7 @@
   <property name="configver" type="int" value="2"/>
   <property name="panels" type="array">
     <value type="int" value="1"/>
-    <property name="dark-mode" type="bool" value="true"/>
+    <property name="dark-mode" type="bool" value="false"/>
     <property name="panel-1" type="empty">
       <property name="position" type="string" value="p=6;x=0;y=0"/>
       <property name="length" type="uint" value="100"/>
@@ -30,6 +30,15 @@
         <value type="int" value="1"/>
       </property>
       <property name="output-name" type="string" value="Primary"/>
+      <property name="enter-opacity" type="uint" value="100"/>
+      <property name="background-style" type="uint" value="1"/>
+      <property name="background-rgba" type="array">
+        <value type="double" value="1"/>
+        <value type="double" value="1"/>
+        <value type="double" value="1"/>
+        <value type="double" value="1"/>
+      </property>
+      <property name="autohide-behavior" type="uint" value="0"/>
     </property>
   </property>
   <property name="plugins" type="empty">
@@ -60,6 +69,21 @@
     <property name="plugin-6" type="string" value="systray">
       <property name="square-icons" type="bool" value="true"/>
       <property name="known-legacy-items" type="array">
+        <value type="string" value="wi-fi network connection “fritz!box 6670 ni 1” active: fritz!box 6670 ni (72%)"/>
+        <value type="string" value="outlook-for-linux"/>
+        <value type="string" value="wi-fi network connection “bll-88283 1” active: bll-88283 (36%)"/>
+        <value type="string" value="wi-fi network connection “nele&apos;s galaxy s23” active: nele&apos;s galaxy s23 (65%)"/>
+        <value type="string" value="wi-fi network connection “nele&apos;s galaxy s23” active: nele&apos;s galaxy s23 (76%)"/>
+        <value type="string" value="wi-fi network connection “geithe” active: geithe (63%)"/>
+        <value type="string" value="wi-fi network connection “geithe” active: geithe (67%)"/>
+        <value type="string" value="wi-fi network connection “geithe” active: geithe (66%)"/>
+        <value type="string" value="wi-fi network connection “geithe” active: geithe (45%)"/>
+        <value type="string" value="wi-fi network connection “geithe” active: geithe (68%)"/>
+        <value type="string" value="wi-fi network connection “geithe” active: geithe (69%)"/>
+        <value type="string" value="wi-fi network connection “geithe” active: geithe (70%)"/>
+        <value type="string" value="wi-fi network connection “geithe” active: geithe (71%)"/>
+        <value type="string" value="wi-fi network connection “geithe” active: geithe (44%)"/>
+        <value type="string" value="wi-fi network connection “geithe” active: geithe (56%)"/>
         <value type="string" value="tidal-hifi"/>
         <value type="string" value="wi-fi network connection “vodafone-77e0” active: vodafone-77e0 (70%)"/>
         <value type="string" value="slack"/>
@@ -72,6 +96,18 @@
         <value type="string" value="networkmanager applet"/>
       </property>
       <property name="known-items" type="array">
+        <value type="string" value="rHidMi8Tz"/>
+        <value type="string" value="qF7MxT1oS"/>
+        <value type="string" value="UJDZfEr1B"/>
+        <value type="string" value="n-WbDzwRH"/>
+        <value type="string" value="VWhPvpJKe"/>
+        <value type="string" value="eFsg5dwNG"/>
+        <value type="string" value="IxbK8ePaJ"/>
+        <value type="string" value="pmTTy9PeP"/>
+        <value type="string" value="Z3tjAthCR"/>
+        <value type="string" value="Nextcloud"/>
+        <value type="string" value="zoom"/>
+        <value type="string" value="remmina-icon"/>
         <value type="string" value="vlc"/>
         <value type="string" value="qpwgraph"/>
         <value type="string" value="CoreKeyboard"/>
@@ -82,7 +118,7 @@
     <property name="plugin-8" type="string" value="pulseaudio">
       <property name="enable-keyboard-shortcuts" type="bool" value="true"/>
       <property name="show-notifications" type="bool" value="true"/>
-      <property name="mpris-players" type="string" value="firefox.instance1588;firefox.instance2;firefox.instance5881;vlc"/>
+      <property name="mpris-players" type="string" value="brave.instance2;firefox.instance1588;firefox.instance2;firefox.instance5881;firefox.instance_1_101;firefox.instance_1_102;firefox.instance_1_106;firefox.instance_1_109;firefox.instance_1_116;firefox.instance_1_117;firefox.instance_1_118;firefox.instance_1_119;firefox.instance_1_124;firefox.instance_1_126;firefox.instance_1_132;firefox.instance_1_139;firefox.instance_1_145;firefox.instance_1_180;firefox.instance_1_209;firefox.instance_1_232;firefox.instance_1_242;firefox.instance_1_301;firefox.instance_1_324;firefox.instance_1_392;firefox.instance_1_430;firefox.instance_1_510;firefox.instance_1_513;firefox.instance_1_558;firefox.instance_1_582;firefox.instance_1_60;firefox.instance_1_64;firefox.instance_1_65;firefox.instance_1_665;firefox.instance_1_69;firefox.instance_1_743;firefox.instance_1_75;firefox.instance_1_77;firefox.instance_1_78;firefox.instance_1_79;firefox.instance_1_81;firefox.instance_1_820;firefox.instance_1_84;firefox.instance_1_85;firefox.instance_1_87;firefox.instance_1_88;firefox.instance_1_89;firefox.instance_1_90;firefox.instance_1_92;firefox.instance_1_94;firefox.instance_1_955;firefox.instance_1_97;firefox.instance_1_98;vlc;vlc.instance84766"/>
     </property>
     <property name="plugin-9" type="string" value="power-manager-plugin"/>
     <property name="plugin-10" type="string" value="notification-plugin"/>

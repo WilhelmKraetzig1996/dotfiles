@@ -3,15 +3,18 @@ application/pdf=com.brave.Browser.desktop;libreoffice-draw.desktop;org.mozilla.f
 x-scheme-handler/http=xfce4-web-browser.desktop;
 x-scheme-handler/https=xfce4-web-browser.desktop;
 image/jpeg=display-im6.q16.desktop;org.xfce.ristretto.desktop;
-text/plain=userapp-nvim-HZRAC2.desktop;userapp-nvim-FN54B2.desktop;userapp-kitty nvim-D01DC2.desktop;userapp-start_kitty.sh nvim-RPTSI2.desktop;
+text/plain=userapp-nvim-HZRAC2.desktop;userapp-nvim-FN54B2.desktop;userapp-kitty nvim-D01DC2.desktop;userapp-start_kitty.sh nvim-RPTSI2.desktop;Reaper.desktop;userapp-start_kitty.sh nvim-BLOMP2.desktop;
 text/markdown=userapp-kitty nvim-D01DC2.desktop;
 audio/x-wav=vlc.desktop;
+image/png=org.xfce.ristretto.desktop;
+video/mp4=vlc.desktop;
+text/x-puredata=org.puredata.pd-gui.desktop;userapp-start_kitty.sh nvim-RPTSI2.desktop;
 
 [Default Applications]
 x-scheme-handler/http=xfce4-web-browser.desktop
 x-scheme-handler/https=xfce4-web-browser.desktop
 image/jpeg=org.xfce.ristretto.desktop
-text/plain=userapp-start_kitty.sh nvim-RPTSI2.desktop
+text/plain=userapp-start_kitty.sh nvim-BLOMP2.desktop
 text/markdown=userapp-kitty nvim-D01DC2.desktop
 application/pdf=org.mozilla.firefox.desktop
-
+video/mp4=vlc.desktop

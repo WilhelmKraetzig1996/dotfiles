@@ -36,6 +36,7 @@ require("lazy").setup(
     'tpope/vim-commentary',
     'rmagatti/goto-preview',
     'andrewferrier/wrapping.nvim',
+    'averms/black-nvim',
     -- autocompletion
     'hrsh7th/nvim-cmp',
     'hrsh7th/cmp-buffer',
@@ -48,6 +49,8 @@ require("lazy").setup(
     'onsails/lspkind.nvim',
     'github/copilot.vim',
     -- debugging
+    'nvim-neotest/nvim-nio',
+    'nvim-neotest/neotest',
     'mfussenegger/nvim-dap',
     'rcarriga/nvim-dap-ui',
     'theHamsta/nvim-dap-virtual-text',
@@ -57,7 +60,7 @@ require("lazy").setup(
         config = function()
             vim.g.ale_fix_on_save = 1
             vim.g.ale_linters = {
-                python = {'flake8', 'black'},
+                python = {'flake8', 'blackd-client'},
                 c = {'clang', 'clangtidy'},
                 cpp = {'clang', 'clangtidy'},
                 bash = {'shellcheck'},
