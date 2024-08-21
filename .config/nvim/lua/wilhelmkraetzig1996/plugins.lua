@@ -38,6 +38,7 @@ require("lazy").setup(
     'andrewferrier/wrapping.nvim',
     'averms/black-nvim',
     -- autocompletion
+    'tpope/vim-surround',
     'hrsh7th/nvim-cmp',
     'hrsh7th/cmp-buffer',
     'hrsh7th/cmp-path',
