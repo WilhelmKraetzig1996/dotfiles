@@ -5,10 +5,17 @@ if [ "$(xdotool getwindowfocus getwindowname)" = "Desktop" ]; then
 elif [[ $(xprop -id $(xdotool getactivewindow)| grep WM_CLASS | grep kitty | wc -l) -ne 0 ]]; then
     rm /tmp/kittysocket
     xdotool getwindowfocus windowclose
-elif [[ "$(xdotool getwindowfocus getwindowname)" == *"Slack"* ]] || [[ "$(xdotool getwindowfocus getwindowname)" == *"A PipeWire Graph Qt GUI Interface"* ]]; then
+elif [[ "$(xdotool getwindowfocus getwindowname)" == *"Slack"* ]]; then
+    if [[ "$(xdotool getwindowfocus getwindowname)" == "Huddle"* ]]; then
+        xdotool keyup q
+        xdotool key --clearmodifiers ctrl+shift+h
+    else
+        xdotool keyup q
+        xdotool key --clearmodifiers ctrl+w
+    fi
+elif [[ "$(xdotool getwindowfocus getwindowname)" == *"A PipeWire Graph Qt GUI Interface"* ]]; then
     xdotool keyup q
     xdotool key --clearmodifiers ctrl+w
-
 elif [[ "$(xdotool getwindowfocus getwindowname)" == *"VLC media player"* ]]; then
     killall -s 9 vlc
 elif [[ "$(xdotool getwindowfocus getwindowname)" == *"KeePassXC"* ]]; then
