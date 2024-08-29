@@ -231,7 +231,7 @@ export VISUAL=nvim
 export PATH=$PATH:/opt/nvim-linux64/bin:/opt/lazygit/bin:/usr/sbin:/opt/miniconda3/bin:$HOME/.scripts/build
 export SSH_AUTH_SOCK="$XDG_RUNTIME_DIR/ssh-agent.socket"
 
-alias conan_rebuild='conan install . -if build_conan && conan build . -bf build_conan && conan package . -bf build_conan -pf conan_package && conan export-pkg -pf conan_package --force .'
+alias conan_rebuild='conan install . -if build_conan && conan build . -bf build_conan && conan package . -bf build_conan -pf build_conan_package && conan export-pkg -pf build_conan_package --force .'
 
 alias lazygit_dotfiles='lazygit --git-dir=$HOME/.dotfiles --work-tree=$HOME'
 alias git_dotfiles='git --git-dir=$HOME/.dotfiles --work-tree=$HOME'
