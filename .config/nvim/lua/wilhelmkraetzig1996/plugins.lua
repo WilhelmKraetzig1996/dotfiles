@@ -18,7 +18,10 @@ require("lazy").setup(
     'nvim-telescope/telescope.nvim',
     'jvgrootveld/telescope-zoxide',
     'nvim-lua/plenary.nvim',
-    'VonHeikemen/lsp-zero.nvim',
+    -- {
+    --     'VonHeikemen/lsp-zero.nvim',
+    --     preset('recommended')
+    -- }
     'neovim/nvim-lspconfig',
     'williamboman/mason.nvim',
     'williamboman/mason-lspconfig.nvim',
@@ -92,5 +95,17 @@ require("lazy").setup(
             vim.g.ale_lint_on_cursor_moved = 0
             vim.g.ale_lint_on_insert = 0
         end
+    },
+    { 
+      "TabbyML/vim-tabby",
+      lazy = false,
+      dependencies = {
+        "neovim/nvim-lspconfig",
+      },
+      init = function()
+        vim.g.tabby_agent_start_command = {"npx", "tabby-agent", "--stdio"}
+        -- vim.g.tabby_agent_start_command = {"echo temp"}
+        vim.g.tabby_inline_completion_trigger = "auto"
+      end,
     },
 })
