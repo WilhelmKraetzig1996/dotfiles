@@ -122,3 +122,12 @@ cmp.setup {
   }
 }
 
+local function setup_tabby_keybindings()
+  vim.cmd("call tabby#inline_completion#keybindings#Setup()")
+end
+
+-- Create an autocmd for BufNew
+vim.api.nvim_create_autocmd("BufNew", {
+  pattern = "*",  -- This pattern will apply to all buffers
+  callback = setup_tabby_keybindings,  -- This is the function to call
+})

@@ -51,7 +51,6 @@ require("lazy").setup(
     'hrsh7th/vim-vsnip-integ',
     'rafamadriz/friendly-snippets',
     'onsails/lspkind.nvim',
-    'github/copilot.vim',
     -- debugging
     'nvim-neotest/nvim-nio',
     'nvim-neotest/neotest',
@@ -103,9 +102,9 @@ require("lazy").setup(
         "neovim/nvim-lspconfig",
       },
       init = function()
-        vim.g.tabby_agent_start_command = {"npx", "tabby-agent", "--stdio"}
-        -- vim.g.tabby_agent_start_command = {"echo temp"}
+        vim.g.tabby_agent_start_command = {"npx", "tabby-agent", "--lsp", "--stdio"}
         vim.g.tabby_inline_completion_trigger = "auto"
+        vim.g.tabby_inline_completion_keybinding_accept = "<Tab>"
       end,
     },
 })
