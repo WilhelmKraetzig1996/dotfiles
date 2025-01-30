@@ -72,8 +72,8 @@ local function dapui_eval()
 	ui.eval(expr, {})
 end
 
-vim.keymap.set({'n', 'v'}, '<M-k>', ui.eval, {})
-vim.keymap.set('n', '<M-K>', dapui_eval, {})
+vim.keymap.set({'n', 'v'}, '<M-i>', ui.eval, {})
+vim.keymap.set('n', '<M-I>', dapui_eval, {})
 
 
 -- CPP
